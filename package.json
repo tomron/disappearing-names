@@ -11,7 +11,8 @@
     "test": "vitest run",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "e2e": "node e2e/chart.e2e.mjs && node e2e/explore.e2e.mjs && node e2e/discover.e2e.mjs && node e2e/compare.e2e.mjs && node e2e/embed.e2e.mjs && node e2e/a11y.e2e.mjs && node e2e/subpath.e2e.mjs"
+    "e2e": "node e2e/chart.e2e.mjs && node e2e/explore.e2e.mjs && node e2e/discover.e2e.mjs && node e2e/compare.e2e.mjs && node e2e/embed.e2e.mjs && node e2e/a11y.e2e.mjs && node e2e/subpath.e2e.mjs",
+    "e2e:live": "node e2e/live.e2e.mjs"
   },
   "dependencies": {
     "@preact/signals": "^2.11.4",

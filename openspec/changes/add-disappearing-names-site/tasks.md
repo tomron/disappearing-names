@@ -49,13 +49,13 @@
 - [x] 7.1 Implement embed mode (`?embed=1`, `view`, `name`) hiding header/footer chrome and keeping compact attribution; verify by loading in a test iframe page at small sizes without scrollbars
 - [x] 7.2 Add accessibility pass: keyboard operation, labeled inputs, contrast, chart text alternatives; verify with an automated axe check on all three views
 - [x] 7.3 Add the `BASE_PATH` build configuration and a subpath smoke test that serves the build at `/disappearing-names/` and checks assets, data fetches, and deep links return 200
-- [ ] 7.4 Add the GitHub Actions workflow to build and deploy to Pages on push to main; verify a successful run and the live URL loads
+- [x] 7.4 Add the GitHub Actions workflow to build and deploy to Pages on push to main; verify a successful run and the live URL loads
 - [x] 7.5 Write the README sections for the three deployment modes (standalone, subpath of personal domain, iframe snippet) and verify by following each against a local build
 
 ## 8. Final integration checks
 
 - [x] 8.1 Confirm CBS terms of use allow publishing derived data and that attribution wording is correct; verify the footer text matches the CBS requirements
-- [ ] 8.2 End-to-end pass on the deployed site: search, surprise, feed, compare, embed, and a mobile device; verify no console errors and record load-size numbers
+- [x] 8.2 End-to-end pass on the deployed site: search, surprise, feed, compare, embed, and a mobile device; verify no console errors and record load-size numbers
 - [x] 8.3 Spot-check 10 well-known names (for example one that vanished, one that surged, one stable) against the CBS spreadsheet values; verify the site's numbers match
 
 ## Workflow follow-up

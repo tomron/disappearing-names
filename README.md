@@ -120,6 +120,9 @@ npm test      # unit and component tests, plus checks against the real CBS file
 npm run e2e   # real-browser checks (needs Chrome; set CHROME_PATH if it is not in the default macOS location)
 ```
 
+`npm run e2e:live -- https://<host>/<base>/` runs the same kind of end-to-end pass against a deployed site
+(search, surprise, feed, compare, embed, a phone profile, and first-load size).
+
 `npm run e2e` covers the chart, explorer, discovery feed, comparison dashboard, embed mode (inside a
 real iframe), accessibility (axe, light and dark), and a smoke test that serves the build under
 `/disappearing-names/` and at the domain root the way GitHub Pages does.
