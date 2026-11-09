@@ -5,7 +5,7 @@ Data: Israel Central Bureau of Statistics (CBS), "current names of those born 19
 
 ## Requirements
 
-Node 20 or newer. No backend, no R.
+Node 24 (the version CI uses). No backend, no R.
 
 ## Data pipeline
 
