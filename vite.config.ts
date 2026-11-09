@@ -1,6 +1,6 @@
 import { copyFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { defineConfig, type Plugin } from 'vite';
+import { defineConfig, type Plugin } from 'vitest/config';
 import preact from '@preact/preset-vite';
 
 // GitHub Pages serves 404.html for unknown paths; a copy of index.html lets deep links
@@ -19,4 +19,6 @@ function spaFallback(): Plugin {
 export default defineConfig({
   base: process.env.BASE_PATH ?? '/',
   plugins: [preact(), spaFallback()],
+  // Some tests parse the real 8 MB CBS workbook; allow for slower CI runners.
+  test: { testTimeout: 30_000 },
 });
