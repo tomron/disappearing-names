@@ -1,0 +1,6 @@
+dist
+public/data
+node_modules
+data/raw
+openspec
+.claude

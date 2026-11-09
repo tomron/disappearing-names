@@ -1,0 +1,39 @@
+{
+  "name": "disappearing-names",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:data && vite build",
+    "build:data": "tsx scripts/build-data.ts",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "e2e": "node e2e/chart.e2e.mjs && node e2e/explore.e2e.mjs && node e2e/discover.e2e.mjs && node e2e/compare.e2e.mjs && node e2e/embed.e2e.mjs && node e2e/a11y.e2e.mjs && node e2e/subpath.e2e.mjs"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.11.4",
+    "preact": "^11.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@observablehq/plot": "^0.6.19",
+    "@preact/preset-vite": "^2.10.6",
+    "@testing-library/preact": "^3.2.6",
+    "@types/node": "^26.6.6",
+    "axe-core": "^4.14.0",
+    "eslint": "^10.14.0",
+    "exceljs": "^4.4.0",
+    "fflate": "^0.8.3",
+    "jsdom": "^31.0.0",
+    "playwright-core": "^1.65.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  }
+}
